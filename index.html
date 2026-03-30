@@ -16,6 +16,9 @@
                         <form action=""name="calc">
                         <input type="text" name="display" id="input"class="form-control control text-right" readonly>
                         <div class="d-flex justify-content-end align-items-end">
+                            <!-- One number delete no rest is here -->
+                            <button type="button" class="btn btn-danger border-white mt-3"onclick="calc.display.value = display.value.slice(0, -1) ">X</button>
+                            <!-- all delete -->
                             <button type="reset" class="btn btn-danger border-none mt-3">Clear</button>
                         </div>
                         <br>
@@ -40,7 +43,9 @@
                         <input type="button" class="btn btn-info btn-xl btn-lg mt-2"value="="onclick="reduce()
                          function reduce() {
             const result = eval(calc.display.value)
-            calc.display.value = result
+            const num =     result.toLocaleString('en-US')
+            calc.display.value = num
+
         }">
                         <input type="button" class="btn btn-dark btn-xl btn-xl btn-lg mt-2"value="/"onclick="calc.display.value +='/'">
                         </form>
@@ -50,5 +55,8 @@
             <div class="col-md-4"></div>
         </div>
     </div>
+    <script>
+     
+    </script>
 </body>
 </html>
