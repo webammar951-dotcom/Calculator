@@ -1,0 +1,116 @@
+/* Center the calculator on the page */
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* The main white rounded container */
+.card {
+    border: 2px solid #adb5bd;
+    border-radius: 40px; /* High radius for that pill-shape look */
+    width: 350px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* The Display Input */
+#input {
+    background-color: #e9ecef;
+    border: 2px solid #333;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 0 15px;
+}
+
+/* Layout for the buttons */
+/*  */
+
+/* Standard button styles */
+.btn-lg {
+    width: 65px;
+    height: 60px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px !important; /* Rounded square look */
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overriding Bootstrap colors to match your screenshot exactly */
+.btn-warning { background-color: #ffc107 !important; } 
+
+.btn-warning:hover {
+    background-color: #e0a800 !important; /* Darker yellow on hover */
+}
+/* Yellow */
+.btn-danger  { background-color: #dc3545 !important;
+
+}
+.btn-danger:hover {
+    background-color: #c82333 !important; /* Darker red on hover */
+}
+/* Red */
+.btn-info    { background-color: #17a2b8 !important; } 
+.btn-info:hover {
+    background-color: #138496 !important; /* Darker teal on hover */
+}
+/* Teal */
+.btn-dark    { background-color: #343a40 !important; } 
+.btn-dark:hover {
+    background-color: #23272b !important; /* Darker grey on hover */
+}
+/* Dark Grey */
+
+/* Clear button specific sizing */
+.btn-danger.mt-3 {
+    width: 80px;
+    height: 40px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px !important;
+    margin-bottom: 15px;
+}
+.btn{
+    cursor: pointer;
+}
+.d-flex{
+    display: flex;
+
+}
+.justify-content-end{
+    justify-content: end;
+}
+.align-items-end{
+    align-items: end;
+    border: none;
+}
+.border-none{
+      border: none;
+}
+/* Grid layout fix for the buttons */
+
+
+/* Hover effect */
+.btn-lg:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.btn-lg:active {
+    transform: scale(0.95);
+}
