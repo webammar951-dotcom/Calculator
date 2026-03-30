@@ -59,7 +59,11 @@ body {
 }
 /* Yellow */
 .btn-danger  { background-color: #dc3545 !important;
+    border: 2px solid white;
 
+}
+.border-white{
+    border: 2px solid white;
 }
 .btn-danger:hover {
     background-color: #c82333 !important; /* Darker red on hover */
