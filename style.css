@@ -14,7 +14,7 @@ body {
     border: 2px solid #adb5bd;
     border-radius: 40px; /* High radius for that pill-shape look */
     width: 350px;
-    padding: 25px;
+    padding: 15px;
     background-color: #fff;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
